@@ -1,0 +1,45 @@
+*
+{
+	
+	color: white;
+}
+body
+{
+	text-align: center;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-size: 15px; 
+	
+}
+h2
+{
+	text-align: center;
+	color:white;
+	font-style: underline;
+	font-family: round;
+}
+p
+{
+	color:white;
+	font-size: 25px;
+	font-family: : round;
+}
+.container
+{
+	
+	width:900px;
+	margin-left: auto;
+    margin-right: auto;
+    text-align:left;
+    font-size: 25px;
+	font-family: round;
+    
+}
+.container .fa
+{
+	margin-right: 10px;
+	color: white;
+
+}

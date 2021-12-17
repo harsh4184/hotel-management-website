@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>BOOK NOW</title>
+	<link rel="stylesheet" href="Booknow.css">
+</head>
+<body>	
+	<section class="section-book">
+	<div class="book">
+		<div class="book-form">
+			<form method="POST" action="insert.php" class="form">
+				<h2 class="heading">BOOK NOW</h2>
+				<div class="form-group">
+					<input type="text" class="form-input" placeholder="Full name" id="name" name="fullname" required>
+					<label for="name" class="form-label">Full name</label>
+				</div>
+				<div class="form-group">
+					<input type="text" class="form-input" placeholder="Phone Number" id="phonenumber" name="phonenumber" required>
+					<label for="phonenumber" class="form-label">Phone Number</label>
+				</div>
+				<div class="form-group">
+					<input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" class="form-input" placeholder="Email Address" id="email" name="email" required>
+					<label for="email" class="form-label">Email Address</label>
+				</div>
+				<p></p>
+			<div>
+			<h2>Room Type:</h2>
+				<div class="form-radio-group">
+					<input type="radio" class="form-radio-input" id="small" name="roomtype" value="basic" required>
+					<label for="small" class="form-radio-label">
+						<span class="form-radio-button"></span>
+						Basic
+					</label>
+				</div>
+				<div class="form-radio-group">
+					<input type="radio" class="form-radio-input" id="small1" name="roomtype" value="standard" required>
+					<label for="small1" class="form-radio-label">
+						<span class="form-radio-button"></span>
+						Standard
+					</label>
+				</div>
+				<div class="form-radio-group">
+					<input type="radio" class="form-radio-input" id="small2" name="roomtype" value="deluxe" required>
+					<label for="small2" class="form-radio-label">
+						<span class="form-radio-button"></span>
+						Deluxe
+					</label>
+				</div>
+			</div>
+				<p></p><br>
+				<p></p>
+			<p></p>
+				<h2>Check In Date and Time:</h2>
+				<div class="form-group">
+					<input type="datetime-local" class="form-input" placeholder="DD/MM/YYYY" id="CheckInDate" name="checkindate" required>
+					<label for="CheckInDate" class="form-label"></label>
+				</div>
+			<h2>Check Out Date and Time:</h2>
+				<div class="form-group">
+					<input type="datetime-local" class="form-input" placeholder="DD/MM/YYYY" id="CheckOutDate" name="checkoutdate" required>
+					<label for="CheckOutDate" class="form-label"></label>
+				</div>
+				<p></p>
+			<div>
+			<h2><br>Payment Method:</h2>
+		<div class="form-radio-group">
+			<input type="radio" class="form-radio-input" id="small3" name="paymentmethod" value="credit card" required>
+			<label for="small3" class="form-radio-label">
+				<span class="form-radio-button"></span>
+				Credit Card
+			</label>
+		</div>
+		<div class="form-radio-group">
+			<input type="radio" class="form-radio-input" id="small4" name="paymentmethod" value="debit card" required>
+			<label for="small4" class="form-radio-label">
+				<span class="form-radio-button"></span>
+				Debit Card
+			</label>
+		</div>
+		<div class="form-radio-group">
+			<input type="radio" class="form-radio-input" id="small5" name="paymentmethod" value="net banking" required>
+			<label for="small5" class="form-radio-label">
+				<span class="form-radio-button"></span>
+				Net Banking
+			</label>
+		</div>
+			</div>
+		<p></p>
+				<div class="form-group">
+					<a href="thankyou.html">
+					<input type="submit" name="submit" value="BOOK NOW &rarr;" class="btn">
+					</a>
+				</div>
+			</form>
+		</div>
+	</div>
+	</section>
+</body>
+</html>

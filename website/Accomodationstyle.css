@@ -1,0 +1,141 @@
+*
+{
+	color: white;
+
+}
+
+body
+{
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+h1,h2
+{
+
+	text-align: center;
+	font-style: round;
+}
+
+p
+{
+	text-align: center;
+	font-size: 25px;
+	font-style: round;
+}
+
+
+#hed1
+{
+	text-decoration:underline;
+}
+.container
+{
+	width:1000px;
+	min-height: 500px;
+	margin: 5px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+.container .box
+{
+	position: relative;
+	width:400px;
+	height:300px;
+	background: black;
+	margin: 30px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+.container .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img
+{
+	width: 400px;
+	height:300px;
+	transition: transform 2s;
+}
+.container .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+.container .box .details
+{
+	position: absolute;
+	top:50px;
+	bottom: 50px;
+	right: 50px;
+	left: 50px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details
+{
+	transform: scaleY(1);
+}
+.container .box .details .contents
+{
+	position: absolute;
+	top: 50%;
+
+	transform: translateY(-50%);
+    text-align: center;
+ }
+.container .box .details .contents h3
+{
+
+	text-align: center;
+
+}
+.container .box .details .contents p
+{
+
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	font-style: bold;
+	margin-right: 10px;
+
+}
+.menu ul
+{
+   display: inline-flex;
+   list-style: none;
+}
+ .menu ul li
+ {
+    width: 135px;
+   margin: 10px;
+   padding: 10px;
+ }
+.menu .fa
+{
+	margin-right: 10px;
+}
+.contents .fa
+{
+	margin-right: 10px;
+}
+.me ul
+{
+	list-style: none;
+
+}
+.to ul
+{
+	list-style: none;
+
+}
+

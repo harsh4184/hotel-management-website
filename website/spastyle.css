@@ -1,0 +1,106 @@
+*
+{
+	color: white;
+}
+p
+{
+
+	color: white;
+	font-size: 25px;
+	font-style:round;
+
+}
+h2
+{
+
+	font-size: 35px;
+	font-style: round;
+	color: white;
+}
+body
+{
+	text-align: center;
+	background-image: url("background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+}
+.container
+{
+	width:1000px;
+	min-height: 500px;
+	margin: 5px auto 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+.container .box
+{
+	position: relative;
+	width:400px;
+	height:400px;
+	background: black;
+	margin: 30px;
+	box-sizing: border-box;
+	display: inline-block;
+	margin-left: auto;
+    margin-right: auto;
+
+}
+.container .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+.container .box .imgBox img
+{
+	width: 400px;
+	height:400px;
+	transition: transform 2s;
+}
+.container .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+.container .box .details
+{
+	position: absolute;
+	top:50px;
+	bottom: 50px;
+	right: 50px;
+	left: 50px;
+	background: rgba(0,0,0,.8);
+	transform: scaleY(0);
+	transition: transform .5s;
+}
+.container .box:hover .details
+{
+	transform: scaleY(1);
+}
+.container .box .details .contents
+{
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	transform: translateY(-50%);
+    text-align: center;
+ }
+.container .box .details .contents h3
+{
+
+	text-align: center;
+
+}
+.container .box .details .contents p
+{
+
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	font-style: bold;
+
+}

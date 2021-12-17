@@ -1,0 +1,45 @@
+*
+{
+	background: black;
+	color:gold;
+	 font-family: 'Cinzel', serif;
+
+}
+body
+{
+	text-align: center;
+}
+h2
+{
+	text-align: center;
+	
+	color:gold;
+	 font-family: 'Cinzel', serif;
+
+	
+}
+p
+{
+	color:gold;
+	font-size: 25px;
+	font-style: bold;
+}
+img
+{
+	display: block;
+	width: 635px;
+	height: 400px;
+	margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border width: 20px;
+    border-color:gold;
+    border-style: solid;
+}
+.menu-1 ul
+{
+	text-align:left;
+	font-size: 25px;
+	font-style: italic;
+}
+}
